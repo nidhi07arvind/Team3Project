@@ -66,59 +66,14 @@
 <form action="display_players.php" method="post">
   Team: <input type="text" name=sTeam ><br>
   Player First name: <input type="text" name=sFName> and Last name: <input type="text" name=sLName> <br>
-  <input type="checkbox" name=sRuns value=1> Runs scored<br>
-  <input type="checkbox" name=sBalls value=1> Balls faced<br>  
-  <input type="checkbox" name=sWickets value=1> Wickets taken<br> 
+  <input type="checkbox" name=sRuns value=1> Runs<br>
+  <input type="checkbox" name=sBalls value=1> Balls<br>  
+  <input type="checkbox" name=sWickets value=1> Wickets<br> 
   <input type="checkbox" name=sNumMatches value=1> Num. matched played<br> 
   <input type="checkbox" name=sSpecialization value=1> Specialization<br> 
   <input type="submit" value="Submit">
 </form>
 
-<?php
-  
-/*
-//$menu = " ";
-while($a = $r->fetch_assoc())
-{
-  //$menu .="<option>" . $a[] . "</option>";
-  echo $a[$select_str0];
-  print_r($a);
-}
-//$menu = "</select></form>";
-//echo $menu;
-?>
-
-</select>
-<form>   
-  Player First name: <input type="text" name="iFname"><br>
-  Player Last name: <input type="text" name="iLname"><br>
-  <input type="submit" value="Submit">
-</form> 
-
-<?php
-echo $_POST['iFname'];
-
-
-$select_str0 = $player_c8_hdr;
-    $table_str0 = 'Player';
-    $where_str0 = '';
-    $sql = "SELECT DISTINCT $select_str0 FROM $table_str0  " ;
-    $r = mysqli_query($conn, $sql) or die("Bad query: $sql");
-
-    $Team_list=" ";
-    while($a = $r->fetch_assoc())
-    {
-      $Team_list .= "<option value=".$a['Team_Id'].">" . $a['Team_Id']. "</option>";
-    }
-    echo $Team_list;
-
-
-
-
-
-
-*/
-?>
 
 </body> 
 </html>
