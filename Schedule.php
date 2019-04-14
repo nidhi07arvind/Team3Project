@@ -81,13 +81,15 @@
     			$result = mysqli_query($conn, $sql) or die("Bad query: $sql");
     			$resultcheck = mysqli_num_rows($result);
     			if ($resultcheck >0) {
-    				<tr>
-  						<th id ="headerTable"><b>Match ID</b></th>
-    					<th id ="headerTable">Date&Time</th>
-    					<th id ="headerTable">Venue</th> 
-   		 				<th id ="headerTable">Team_Id</th>
-   		 				<th id ="headerTable">ManOfTheMatch</th>
-  					</tr>
+    			
+    			echo"<tr>
+    				<td id ="headerTable">Match ID</td>
+    				<td id ="headerTable">Date&Time</td>
+    				<td id ="headerTable">Venue</td>
+    				<td id ="headerTable">Team_Id</td>
+    				<td id ="headerTable">ManOfTheMatch</td>
+    			</tr>\n";
+    			
     				while($row = mysqli_fetch_assoc($result)) {
        					echo "<tr>";
         				echo "<td id ="rowVal">{$row['Match_Id']}</td>";
@@ -102,65 +104,7 @@
 			?>
 		<br>
 		</div>
-		
-		<div id ="semifinalDiv">
-		<p id ="semifinalID"style="color:lightcyan;font-size:30px"><b>Semifinals</b></p>
-		<table id="semifinal" style="width:220%">
-  		<tr>
-  			<th id ="headerTable">Match ID</th>
-    		<th id ="headerTable">Date&Time</th>
-    		<th id ="headerTable">Venue</th> 
-   		 	<th id ="headerTable">Team 1</th>
-   		 	<th id ="headerTable">Team 2</th>
-   		 	<th id ="headerTable">Result</th>
-   		 	<th id ="headerTable">Man of the Match</th>
-  		</tr>
- 		<tr>
-    		<td id ="rowVal">1</td>
-    		<td id ="rowVal">14-Apr-2019</td> 
-    		<td id ="rowVal">Delhi</td>
-    		<td id ="rowVal"><a href="https://www.cricbuzz.com/">India</a></href></td>
-    		<td id ="rowVal"><a href="https://www.cricbuzz.com/">Australia</a></href></td>
-    		<td id ="rowVal"><a href="https://www.cricbuzz.com/">India won my 5 runs</a></td>
-    		<td id ="rowVal"><a href="https://www.cricbuzz.com/">Virat Kohli</a></href></td>
-  		</tr>
-  		<tr>
-    		<td id ="rowVal">2</td>
-    		<td id ="rowVal">15-Apr-2019</td> 
-    		<td id ="rowVal">Chennai</td>
-    		<td id ="rowVal"><a href="https://www.cricbuzz.com/">South Africa</a></href></td>
-    		<td id ="rowVal"><a href="https://www.cricbuzz.com/">Pakistan</a></href></td>
-    		<td id ="rowVal"><a href="https://www.cricbuzz.com/">SA won my 5 wickets</a></td>
-    		<td id ="rowVal"><a href="https://www.cricbuzz.com/">Faf Du Plesis</a></href></td>
-  		</tr>
-		</table>
-		<br>
-		</div>
-		
-		<div id ="finalDiv">
-		<p id ="finalID"style="color:lightcyan;font-size:30px"><b>Final</b></p>
-		<table id="final" style="width:220%">
-  		<tr>
-  			<th id ="headerTable">Match ID</th>
-    		<th id ="headerTable">Date&Time</th>
-    		<th id ="headerTable">Venue</th> 
-   		 	<th id ="headerTable">Team 1</th>
-   		 	<th id ="headerTable">Team 2</th>
-   		 	<th id ="headerTable">Result</th>
-   		 	<th id ="headerTable">Man of the Match</th>
-  		</tr>
- 		<tr>
-    		<td id ="rowVal">1</td>
-    		<td id ="rowVal">14-Apr-2019</td> 
-    		<td id ="rowVal">Delhi</td>
-    		<td id ="rowVal"><a href="https://www.cricbuzz.com/">India</a></href></td>
-    		<td id ="rowVal"><a href="https://www.cricbuzz.com/">Australia</a></href></td>
-    		<td id ="rowVal"><a href="https://www.cricbuzz.com/">India won my 5 runs</a></td>
-    		<td id ="rowVal"><a href="https://www.cricbuzz.com/">Virat Kohli</a></href></td>
-  		</tr>
-		</table>
-		<br>
-		</div>
+
 		
   		</div>
        </div>
