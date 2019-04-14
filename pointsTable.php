@@ -64,7 +64,7 @@
 
     $resultcheck = mysqli_num_rows($result);
     if ($resultcheck >0) {
-    echo"<table border='1'>";
+    echo"<table border='1' align='center'>";
     echo"<tr><td>Team</td><td>Rank</td><td>Matches</td><td>Won</td><td>Lost</td><td>Tied</td><td>Points</td><td>RunRate</td></tr>\n";
     while($row = mysqli_fetch_assoc($result)) {
         echo "<tr>";
