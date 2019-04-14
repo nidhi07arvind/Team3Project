@@ -74,11 +74,11 @@
     			
     	while($row = mysqli_fetch_assoc($result)) {
        		echo "<tr>";
-        	echo "<td id ="rowVal">{$row['Match_Id']}</td>";
-        	echo "<td id ="rowVal">{$row['MatchDateAndTime']}</td>";
-        	echo "<td id ="rowVal">{$row['Venue']}</td>";
-        	echo "<td id ="rowVal">{$row['Team_Id']}</td>";
-        	echo "<td id ="rowVal">{$row['ManOfTheMatch']}</td>";
+        	echo "<td id ='rowVal'>{$row['Match_Id']}</td>";
+        	echo "<td id ='rowVal'>{$row['MatchDateAndTime']}</td>";
+        	echo "<td id ='rowVal'>{$row['Venue']}</td>";
+        	echo "<td id ='rowVal'>{$row['Team_Id']}</td>";
+        	echo "<td id ='rowVal'>{$row['ManOfTheMatch']}</td>";
         	echo "</tr>";
      	}
     	echo "</table>";
