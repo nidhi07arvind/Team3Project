@@ -50,19 +50,10 @@
       </div><!-- /.container-fluid -->
     </nav>
     <div class="hero text-center">
-      <h1>Cricket World Cup 2019</h1>
-      <p>The fun is Out There</p>
-    </div>
-    
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-  <script src="data.js"></script>
-  <script src="app.js"></script>
-</body> 
-
-<?php
-echo"<table border='1'>";
-  $sql = "SELECT * FROM Matches";
-  $result = mysqli_query($conn, $sql) or die("Bad query: $sql");
+      <?php
+		echo"<table border='1'>";
+  		$sql = "SELECT * FROM Matches";
+  		$result = mysqli_query($conn, $sql) or die("Bad query: $sql");
         $resultcheck = mysqli_num_rows($result);
         if ($resultcheck >0) {
             echo "<tr>";
@@ -82,9 +73,13 @@ echo"<table border='1'>";
                 echo "</tr>";
             }
             echo "</table>";
-    }
+    	}
 
-?>
-
+		?>
+    </div>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
 </body> 
 </html>
