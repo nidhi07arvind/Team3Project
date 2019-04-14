@@ -39,10 +39,11 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right navbar-right-custom">
       
-              <li><a href="Put link to schedule page here">Schedule</a></li>
+              <li><a href="schedule.php">Schedule</a></li>
               <li><a href="pointsTable.php">Points table</a></li>
-              <li><a href="Put link to Teams page here">Teams</a></li>
+              <li><a href="teams.php">Teams</a></li>
               <li><a href="players.php">Players</a></li>
+              <li><a href="login.php">Login</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div>
