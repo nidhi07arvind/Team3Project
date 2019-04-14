@@ -177,7 +177,7 @@
   $r = mysqli_query($conn, $sql) or die("Bad query: $sql");
 
 
-  echo"<table border='1'>";
+  echo"<table border='1' align='center'>";
   //echo"<tr><td>$player_table_c1_name</td><td>$player_table_c2_name</td><td>$player_table_c3_name</td><td>$player_table_c4_name</td><td>$player_table_c5_name</td><td>$player_table_c6_name</td><td>$player_table_c7_name</td><td>$player_table_c8_name</td><td>$player_table_c9_name</td></tr>\n";
   echo $hdr_str;
   while($a = $r->fetch_assoc()){

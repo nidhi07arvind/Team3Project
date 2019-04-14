@@ -115,8 +115,8 @@
 ?>
 
 Fetch player information
-<form action="display_players.php" method="post">
-  Team name         : <input type="text" name=sTeam ><br>
+<form action="display_players.php" method="post" >
+  Team name         : <input type="text" name=sTeam><br>
   Player First name : <input type="text" name=sFName><br> 
   Player Last name  : <input type="text" name=sLName> <br>
   <input type="checkbox" name=sRuns value=1> Runs<br>
