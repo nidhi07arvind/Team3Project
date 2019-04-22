@@ -1,6 +1,5 @@
 <?php
   include_once 'includes/dbh.inc.php';
-  $_POST = array()
 ?>
 
 <!DOCTYPE html>
