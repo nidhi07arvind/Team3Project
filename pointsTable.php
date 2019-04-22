@@ -14,7 +14,6 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
 </head>
 
-
 <body>
 
 <div class="wrapper">
@@ -31,7 +30,7 @@
               <span class="icon-bar"></span>
             </button>
             <div class="col-xs-9 phone-nav">
-              <a class="navbar-brand" href="#" id="logo">Home</a>
+              <a class="navbar-brand" href="index.html" id="logo">Home</a>
             </div>
           </div>
 
@@ -49,22 +48,15 @@
         </div>
       </div><!-- /.container-fluid -->
     </nav>
-    <div class="hero text-center">
-      <h1>Cricket World Cup 2019</h1>
-      <p>The fun is Out There</p>
-    </div>
     
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-  <script src="data.js"></script>
-  <script src="app.js"></script>
-</body> 
+
 <?php
     $sql = "SELECT * FROM PointsTable;";
     $result = mysqli_query($conn, $sql) or die("Bad query: $sql");
 
     $resultcheck = mysqli_num_rows($result);
     if ($resultcheck >0) {
-    echo"<table border='1' align='center'>";
+    echo"<table id= 'pointsTable' border='1' align='center'>";
     echo"<tr><td>Team</td><td>Rank</td><td>Matches</td><td>Won</td><td>Lost</td><td>Tied</td><td>Points</td><td>RunRate</td></tr>\n";
     while($row = mysqli_fetch_assoc($result)) {
         echo "<tr>";
@@ -81,7 +73,7 @@
     echo "</table>";
   }
 ?>
-
+</body> 
 </html>
 
 
