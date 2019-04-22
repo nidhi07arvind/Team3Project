@@ -32,7 +32,7 @@
               <span class="icon-bar"></span>
             </button>
             <div class="col-xs-9 phone-nav">
-              <a class="navbar-brand" href="#" id="logo">Home</a>
+              <a class="navbar-brand" href="index.html" id="logo">Home</a>
             </div>
           </div>
 
@@ -50,7 +50,7 @@
         </div>
       </div><!-- /.container-fluid -->
     </nav>
-    <div class="hero text-center">
+    <div class="hero1 text-center">
       <?php
 		echo"<table border='1'>";
   		$sql = "SELECT * FROM Matches";
@@ -80,7 +80,6 @@
     </div>
     
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-  <script src="data.js"></script>
   <script src="app.js"></script>
 </body> 
 </html>
